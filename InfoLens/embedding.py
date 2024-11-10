@@ -18,7 +18,7 @@ def create_vector_embedding(loaders):
     # Step 3: Split documents into smaller chunks
     text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
     final_documents = text_splitter.split_documents(docs)
-
+    print(final_documents)
     # Step 4: Create FAISS vector store
     vectors = FAISS.from_documents(documents=final_documents,embedding=embeddings)
 
