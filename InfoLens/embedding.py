@@ -13,7 +13,7 @@ def create_vector_embedding(loaders):
     embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
 
     # Step 2: Load documents using the provided loader
-    docs = loader.load()
+    docs = loaders.load()
 
     # Step 3: Split documents into smaller chunks
     text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
