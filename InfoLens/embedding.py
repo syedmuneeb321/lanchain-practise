@@ -4,7 +4,7 @@ from langchain_community.vectorstores import FAISS
 
 
 
-def create_vector_embedding(loader: any):
+def create_vector_embedding(loaders):
     """
     Creates vector embeddings from loaded documents and stores them in a FAISS vector store.
     """
