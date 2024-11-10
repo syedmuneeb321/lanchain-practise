@@ -17,7 +17,7 @@ st.title("RAG Document Q&A with Groq and Llama3")
 with st.sidebar:
     st.header("Document Loader")
     if st.button("Load Documents"): 
-        loader = load_document("./research_papers")
+        loader = load_document("research_papers")
         # step 2: create vector embeddings
         st.session_state.vectors = create_vector_embedding(loader=loader)
         st.write("Vector Database is ready")
