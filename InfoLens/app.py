@@ -19,7 +19,7 @@ with st.sidebar:
     if st.button("Load Documents"): 
         loaders = load_document("research_papers")
         # step 2: create vector embeddings
-        st.session_state.vectors = create_vector_embedding(loader = loaders)
+        st.session_state.vectors = create_vector_embedding(loaders = loaders)
         st.write("Vector Database is ready")
 
 
