@@ -1,0 +1,10 @@
+streamlit
+langchain
+langchain-community
+# langchain-openai
+langchain-groq 
+# langsmith
+# langchain_google_genai
+arxiv 
+wikipedia 
+duckduckgo-search
