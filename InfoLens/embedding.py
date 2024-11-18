@@ -4,7 +4,7 @@ from langchain_community.vectorstores import FAISS
 
 
 
-def create_vector_embedding(loader: any):
+def create_vector_embedding(loaders):
     """
     Creates vector embeddings from loaded documents and stores them in a FAISS vector store.
     """
@@ -13,12 +13,12 @@ def create_vector_embedding(loader: any):
     embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
 
     # Step 2: Load documents using the provided loader
-    docs = loader.load()
+    docs = loaders.load()
 
     # Step 3: Split documents into smaller chunks
     text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
     final_documents = text_splitter.split_documents(docs)
-
+    print(final_documents)
     # Step 4: Create FAISS vector store
     vectors = FAISS.from_documents(documents=final_documents,embedding=embeddings)
 
