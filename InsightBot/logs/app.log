@@ -1,0 +1,58 @@
+2024-11-19 11:41:39,675 - INFO - Application started successfully
+2024-11-19 11:41:51,413 - INFO - Application started successfully
+2024-11-19 11:41:53,105 - INFO - Application started successfully
+2024-11-19 11:41:53,115 - INFO - Initializing tools
+2024-11-19 11:41:53,305 - INFO - Tools initialized successfully
+2024-11-19 11:41:53,510 - ERROR - Error initializing agent: initialize_agent() got multiple values for argument 'tools'
+2024-11-19 11:44:24,900 - INFO - Application started successfully
+2024-11-19 11:44:24,904 - INFO - Initializing tools
+2024-11-19 11:44:24,906 - INFO - Tools initialized successfully
+2024-11-19 11:44:24,999 - ERROR - Error initializing agent: 'tuple' object has no attribute 'is_single_input'
+2024-11-19 11:45:36,632 - INFO - Application started successfully
+2024-11-19 11:45:36,637 - INFO - Initializing tools
+2024-11-19 11:45:36,638 - INFO - Tools initialized successfully
+2024-11-19 11:45:36,739 - ERROR - Error initializing agent: Missing some input keys: {'input'}
+2024-11-19 11:46:35,114 - INFO - Application started successfully
+2024-11-19 11:46:35,126 - INFO - Initializing tools
+2024-11-19 11:46:35,129 - INFO - Tools initialized successfully
+2024-11-19 11:46:35,221 - ERROR - Error initializing agent: Missing some input keys: {'input'}
+2024-11-19 11:48:56,056 - INFO - Application started successfully
+2024-11-19 11:48:56,068 - INFO - Initializing tools
+2024-11-19 11:48:56,074 - INFO - Tools initialized successfully
+2024-11-19 11:48:57,145 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-19 11:49:03,589 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-19 11:49:04,419 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-19 11:49:04,688 - INFO - Response generated successfully.
+2024-11-19 11:51:46,754 - INFO - Application started successfully
+2024-11-19 11:51:52,854 - INFO - Application started successfully
+2024-11-19 11:51:55,403 - INFO - Application started successfully
+2024-11-19 11:51:55,410 - INFO - Initializing tools
+2024-11-19 11:51:55,413 - INFO - Tools initialized successfully
+2024-11-19 11:51:56,511 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-19 11:52:03,896 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-19 11:52:05,343 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-19 11:52:06,883 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-19 11:52:07,775 - INFO - Response generated successfully.
+2024-11-19 11:52:18,352 - INFO - Application started successfully
+2024-11-19 11:52:18,358 - INFO - Initializing tools
+2024-11-19 11:52:18,359 - INFO - Tools initialized successfully
+2024-11-19 11:52:19,372 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-19 11:52:24,213 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-19 11:52:26,616 - INFO - response: https://duckduckgo.com/?q=Lanchain%0A 200 18081
+2024-11-19 11:52:28,348 - INFO - response: https://links.duckduckgo.com/d.js?q=Lanchain%0A&kl=wt-wt&l=wt-wt&p=&s=0&df=y&vqd=4-18245533025378287112294692302455132376&bing_market=wt-WT&ex=-1 200 10423
+2024-11-19 11:52:29,197 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-19 11:52:30,325 - INFO - Response generated successfully.
+2024-11-19 11:53:00,288 - INFO - Application started successfully
+2024-11-19 11:53:00,296 - INFO - Initializing tools
+2024-11-19 11:53:00,298 - INFO - Tools initialized successfully
+2024-11-19 11:53:01,343 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-19 11:53:01,908 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=LLM+research+paper&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2024-11-19 11:53:06,798 - INFO - Got first page: 100 of 758505 total results
+2024-11-19 11:53:08,389 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-19 11:53:10,057 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Integration+of+Large+Language+Models+and+Federated+Learning%22+Chaochao+Chen+Xiaohua+Feng+Yuyuan+Li+Lingjuan+Lyu+Jun+Zhou+Xiaolin+Zheng+Jianwei+Yin&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2024-11-19 11:53:12,010 - INFO - Got empty first page; stopping generation
+2024-11-19 11:53:12,857 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-19 11:53:15,266 - INFO - response: https://duckduckgo.com/?q=Integration+of+Large+Language+Models+and+Federated+Learning%22+Chaochao+Chen+Xiaohua+Feng+Yuyuan+Li+Lingjuan+Lyu+Jun+Zhou+Xiaolin+Zheng+Jianwei+Yin 200 20811
+2024-11-19 11:53:16,949 - INFO - response: https://links.duckduckgo.com/d.js?q=Integration+of+Large+Language+Models+and+Federated+Learning%22+Chaochao+Chen+Xiaohua+Feng+Yuyuan+Li+Lingjuan+Lyu+Jun+Zhou+Xiaolin+Zheng+Jianwei+Yin&kl=wt-wt&l=wt-wt&p=&s=0&df=y&vqd=4-976119520105323185232935070758046250&bing_market=wt-WT&ex=-1 200 10152
+2024-11-19 11:53:21,679 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-19 11:53:22,901 - INFO - Response generated successfully.

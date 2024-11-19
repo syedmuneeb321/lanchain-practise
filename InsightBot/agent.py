@@ -24,19 +24,20 @@ def process_user_input(api_key, prompt, messages,callbacks=None):
 
 
         search_agent = initialize_agent(
-            tools=tools,
-            agent=AgentType.CHAT_CONVERSATIONAL_REACT_DESCRIPTION,
+            tools,
+            llm,
+            agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION,
             handle_parsing_errors=True
         )
 
-        # logger.info("Agent initialized successfully")
-        messages.append({"role": "user", "content": prompt})
+        logger.info("Agent initialized successfully")
+        
 
         response = search_agent.run(messages,callbacks=callbacks)
 
         logger.info("Response generated successfully.")  # Log successful response
 
-        messages.append({"role": "assistant", "content": response})
+        
 
         return response
 
@@ -44,5 +45,5 @@ def process_user_input(api_key, prompt, messages,callbacks=None):
     
     except Exception as e:
         logger.error(f"Error initializing agent: {e}")
-        return None
+        return "Sorry, I couldn't initialize my agent. Please check the logs."
         

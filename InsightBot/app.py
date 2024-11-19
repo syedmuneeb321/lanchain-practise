@@ -1,6 +1,6 @@
 import streamlit as st 
 from logger import get_logger 
-# from tools import initialize_tools
+
 from langchain.callbacks import StreamlitCallbackHandler
 from agent import process_user_input
 
@@ -29,7 +29,10 @@ for msg in st.session_state.messages:
 
 if prompt:= st.chat_input(placeholder="Ask me anything!"):
     if api_key:
-        st.chat_message("user").write(prompt)
+        st.chat_message("user").write(prompt) 
+
+        st.session_state.messages.append({"role": "user", "content": prompt})
+
 
         with st.chat_message("assistant"):
             st_cb = StreamlitCallbackHandler(st.container(),expand_new_thoughts=False)
@@ -37,6 +40,8 @@ if prompt:= st.chat_input(placeholder="Ask me anything!"):
             response = process_user_input(api_key=api_key,prompt=prompt,messages=st.session_state.messages,callbacks=[st_cb])
 
             st.write(response)
+
+            st.session_state.messages.append({"role": "assistant", "content": response})
 
     else:
         st.warning("Please enter your Groq API key in the sidebar.")
