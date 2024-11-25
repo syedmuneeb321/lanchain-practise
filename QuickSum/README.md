@@ -34,7 +34,7 @@ Follow these steps to get QuickSum up and running:
 
 1. **Clone the Repository**
    ```bash
-   git clone <repository_url>
+   git clone https://github.com/syedmuneeb321/lanchain-practise/tree/main/QuickSum
    cd QuickSum
    ```
 
